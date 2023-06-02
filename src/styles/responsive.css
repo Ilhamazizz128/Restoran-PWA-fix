@@ -1,0 +1,44 @@
+@media screen and (max-width: 498px){
+    @media screen and (max-width: 1080px) {
+        #restaurant .list-item {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    .nav {
+        transition: transform 0.3s ease;
+        z-index: 10;
+        width: 100%;
+        -webkit-transform:  translate (-100%, 0);
+        
+        position: absolute;
+        transform: translate(-100%, 0);
+        
+        background-color: #fff;
+    }
+    .menu {
+        display: grid;
+        list-style-type: none;
+    }
+    
+    .off-canvas {
+        display: none;
+        
+    }
+    
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    #restaurant .list-item {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
